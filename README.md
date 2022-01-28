@@ -10,7 +10,7 @@ Before downloading and using this dataset please read [WildUAV_License.pdf](Wild
 
 The data itself can be accessed at [this link](https://forms.office.com/r/teEEnkByr9).
 
-If you use or find our dataset useful, please cite the associated :link: [paper]():
+If you use or find our dataset useful, please cite the associated :link: [paper](https://users.utcluj.ro/~horatiuflorea/private/dc/wuav_prefinal.pdf):
 
 ```bibtex
 @article{florea2021wilduav,
@@ -65,7 +65,26 @@ Depth information is stored in *.npy* files which can be easily read using the *
 
 #### Semantic information
 
-Semantic segmentation annotations are provided for the images in the Mapping set as *.png* files, packaged in separate archives. There are 16 possible class labels (such as Deciduous trees, Coniferous trees, Ground vegetation, etc.) detailed in the *label_encoding.txt* file. Semantic segmentations are also provided for video sequence *vid02*, where labels from manually annotated keyframes were propagated automatically to other frames (see paper for more details about methodology).
+Semantic segmentation annotations are provided for the images in the Mapping set as *.png* files, packaged in separate archives. There are 16 possible class labels detailed in the *label_encoding.txt* file. Semantic segmentations are also provided for video sequence *vid02*, where labels from manually annotated keyframes were propagated automatically to other frames (see paper for more details about methodology).
+
+Class               |    Label
+-------------------:|:---------------------- 
+Sky                 |    \[0, 255, 255\]
+Deciduous trees     |    \[0, 127, 0\]
+Coniferous trees    |    \[19, 132, 69\]
+Fallen trees        |    \[0, 53, 65\]
+Dirt ground         |    \[130, 76, 0\]
+Ground vegetation   |    \[152, 251, 152\]
+Rocks               |    \[151, 126, 171\]
+Water plane         |    \[0, 0, 255\]
+Building            |    \[250, 150, 0\]
+Fence               |    \[115, 176, 195\]
+Road                |    \[128, 64, 128\]
+Sidewalk            |    \[255, 77, 228\]
+Static car          |    \[123, 123, 123\]
+Moving car          |    \[255, 255, 255\]
+People              |    \[200, 0, 0\]
+Empty               |    \[0, 0, 0\]
 
 #### Metadata
 
